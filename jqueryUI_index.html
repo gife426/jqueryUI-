@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jqueryUI</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <!-- 使用CDN加速的链接比下载的文件多自带的图片样式-->
+</head>
+<style>
+     .ui-selected{
+         background-color: #007fff;
+     }
+     /*清除最外层元素的浮动效果*/
+   .ui-menu:after{
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+   }
+     .ui-menu .ui-menu-item{
+         display: inline-block;
+         float: left;
+         margin: 0;
+         padding: 10px;
+         width: auto;
+
+     }
+     .ui-spinner{
+         height: 32px;
+     }
+</style>
+<body>
+<div class="widget">
+    <h1 class="widget">Widget Buttons</h1>
+    <a  href="http://www.hupu.com">虎扑体育</a>
+    <button >按钮</button>
+    <input  type="submit" value="提交">
+</div>
+
+    <h1>CSS Buttons</h1>
+    <a class="ui-button ui-widget ui-corner-all" href="http://www.baidu.com">百度</a>
+
+<br/><br/>
+<!--交互效果Interactions-->
+   <div class="ui-widget-header" id="draggable" style="width: 200px;height: 200px ;border: 2px solid red">draggable box & resizeable</div>
+<br/>
+   <div class="ui-widget-content" id="droppable" style="width: 300px;height: 300px ;border: 2px solid green">droppable box</div>
+
+    <strong>這個世界誰最帥</strong>
+    <ul id="select">
+        <li id="right">A.Me</li>
+        <li>B.You</li>
+        <li>C.You&Me</li>
+    </ul>
+    <a href="#" id="btn">提交</a>
+<strong>可以调整的顺序的列表</strong>
+<ul id="sortable">
+    <li>A.NO1</li>
+    <li>B.NO2</li>
+    <li>C.NO3</li>
+</ul>
+<!--小控件Widgets-->
+<div id="accrodion">
+    <h3>Section1</h3>
+    <div>
+        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        </p>
+    </div>
+    <h3>Section2</h3>
+    <div>
+        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        </p>
+    </div>
+    <h3>Section3</h3>
+    <div>
+        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        </p>
+    </div>
+    <h3>Section4</h3>
+    <div>
+        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        </p>
+    </div>
+</div>
+<div id="progressbar"></div>
+
+<ul id="meau">
+    <li>html</li>
+    <li>css</li>
+    <li>javascript
+        <ul><li>jQuery</li>
+            <li>JSON</li>
+            <li>PHP</li>
+        </ul>
+    </li>
+</ul>
+<br>
+<br>
+<br>
+    <span id="sliderValue">0</span>
+    <div id="slider"></div>
+<br>
+<br>
+<br>
+<p>
+    <label for="spinner">Select a value:</label>
+    <input id="spinner" name="value" >
+    <button id="spinnerBtn">getValue</button>
+</p>
+<br>
+<br>
+</body>
+</html>
