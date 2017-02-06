@@ -66,6 +66,12 @@ $(function () {
         alert( $("#spinner").spinner("value"));//点击按钮获取value值
     });
 });
-
-
+//tabs点击切换效果
+$(function () {
+    $("#tabs").tabs({
+        collapsible: true,
+        heightStyle: "fill",
+        active:false
+    })
+})
 
